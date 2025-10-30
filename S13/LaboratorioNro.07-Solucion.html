@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body{
+			background-color: grey;
+		}
+		.contenedor{
+			display: flex;
+			flex-direction: column;
+			width: 99%;
+			border: 1px solid black;
+
+		}
+		header{
+			width: 95%;
+			height: 150px;
+			margin-left: 2%;
+			margin-right: 2%;
+			background-color: darkblue;
+			border: 3px solid green;
+			display: flex;
+			flex-direction: row;
+		}
+		.logo{
+			border: 1px solid red;
+			width: 50%;
+			height: 105px;
+			padding-left:50px ;
+			padding-top: 40px;
+			
+		}
+		.logo a{
+			color: white;
+			font-size: 300%;
+		}
+		header nav{ 
+			border: 2px solid yellow;
+		 	width: 40%;
+		 	height: 50px;
+		 	margin-top: 50px;
+		 	margin-left: 50px;
+		 	background-color: darkorange;
+		 	display: flex;
+		 	justify-content: center;
+		 }	
+		 header nav a{
+		 	color: white;
+		 	font-size: 120%;
+		 	border: 1px solid green;
+		 	padding: 12px;
+		 	width: 80px;
+		 }
+		 .main{
+		 	margin-left: 2%;
+			margin-right: 2%;
+			width: 95%;
+			display: flex;
+			flex-direction: row;
+			background-color: white;
+		 }
+		 .articulos{
+		 	display: flex;
+			flex-direction: column;
+		 }
+		 section{
+		 	width: 60%;
+		 	height: 500px;
+		 	border: 2px solid black;
+		 }
+		 article{
+		 	width: 90%;
+		 	height: 200px;
+		 	border: 1px solid red;
+		 	padding: 10px;
+		 			 }
+		 aside{
+		 	width: 60%;
+		 	height: 500px;
+		 	background-color: orange;
+		 	display: flex;
+		 	flex-direction: column;
+		 	border: 2px solid black;
+		 }
+		 .widget{
+		 	width: 80%;
+		 	height: 40%;
+		 	margin: 20px 20px 10px 40px;
+		 	background-color: darkorange;
+		 }
+
+
+		 footer{
+		 	background-color: darkblue;
+		 	margin-left: 2%;
+			margin-right: 2%;
+		 	width: 95%;
+		 	height: 100px;
+		 	border: 2px solid yellow;
+		 	display: flex;
+		 	flex-direction: row;
+		 }
+		 .links{
+		 	width: 70%;
+		 	height: 50px;
+		 	border: 2px solid yellow;
+		 	margin-top: 20px;
+		 	margin-left: 10px;
+		 	background-color: darkorange;
+		 	display: flex;
+		 	justify-content: center;
+
+		 }
+		 .links a{
+		 	color: white;
+			font-size: 120%;
+			padding: 12px;
+		 }
+		 .social{
+		 	width: 25%;
+		 	height: 50px;
+		 	border: 2px solid green;
+		 	margin-top: 20px;
+		 	margin-left: 60%;
+		 	background-color: darkorange;
+
+		 	
+		 }
+		 .social a{
+		 	color: white;
+			font-size: 120%;
+			padding: 12px;
+
+		 }
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<a href="#">MaestrosDelFlex</a>
+			</div>
+ 
+			<nav>
+				<a href="#">Inicio</a>
+				<a href="#">Blog</a>
+				<a href="#">Proyectos</a>
+				<a href="#">Contacto</a>
+			</nav>
+		</header>
+ 
+		<section class="main">
+			<div class="articulos">
+			<article>
+				<h2 class="titulo">Lorem ipsum dolor sit amet.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
+ 
+			<article>
+				<h2 class="titulo">Lorem ipsum dolor sit amet.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
+			</div>
+		<aside>
+			<div class="widget">
+				<div class="imagen"></div>
+			</div>
+ 
+			<div class="widget">
+				<div class="imagen"></div>
+			</div>
+		</aside>
+
+		</section>
+ 
+		
+ 
+		<footer>
+			<section class="links">
+				<a href="#">Inicio</a>
+				<a href="#">Blog</a>
+				<a href="#">Proyectos</a>
+				<a href="#">Contacto</a>
+			</section>
+ 
+			<div class="social">
+				<a href="#">FB</a>
+				<a href="#">TW</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
