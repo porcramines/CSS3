@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ejeplo de Media query</title>
+   
+<style type="text/css">
+  .contenedor {
+  border-style: solid;
+  border-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: grey;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .contenedor {
+    width: 100%;
+    padding-left: 23px;
+    flex-direction: column-reverse;
+  }
+  .cajas {
+      border-style: solid;
+  border-color: yellow;
+    width: 100%;
+  }
+}
+</style>
+
+
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="cajas caja1">
+        <h1>Priemra Caja</h1>
+        <p>
+		Información en la primera caja
+        </p>
+      </div>
+      <div class="cajas caja2">
+        <h1>Segunda Caja</h1>
+        <p>
+          Información en la segunda caja
+        </p>
+      </div>
+  </body>
+</html>
