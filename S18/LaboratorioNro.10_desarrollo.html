@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ejemplo web responsive</title>
+    <meta name="title" content="Ejemplo web responsive">
+    <meta name="description" content="Ejemplo de la utilización de CSS para crear una web responsive">
+    <meta name="keywords" content="código,css,css3,web,responsive">
+</head>
+<style>
+	li{
+		width: 60px;
+		height: 30px;
+		border-radius: 5px;
+		background-color: skyblue;
+		display: inline-block;
+
+	}
+	ul{
+		padding: 20px;
+  		margin: 20px; 
+		display: contents;
+	}
+section
+{
+	border: 2px solid red;
+	width: 80vw;
+	
+	background-color: grey;
+	display: inline-block;
+}
+aside
+{
+	width: 15vw;
+	height: 30px;
+	padding: 5px; 
+	/*position: relative; 
+	top: -500px;
+	left: 1220px;
+	*/
+	margin-left: 5px; 
+	background-color: grey;
+	
+}
+.contenedorprincipal{
+	border: 2px solid blue;
+		border: 2px solid yellow ;
+		width: 100vw;
+		display: inline-flex;
+
+}
+
+
+
+
+@media screen and (max-width:800px) {
+
+	ul{
+
+
+		border-radius: 5px;
+		background-color: skyblue;
+ 		
+  		margin: 1px;
+  		width: 39vw;
+		display: inline-grid;
+	}
+	section
+{
+	width: 90vw;
+	
+}
+.contenedorprincipal{
+		
+		width: 100vw;
+		display: contents;
+
+}
+
+}	
+</style>
+<body>
+
+<div class="container">
+	<header>
+		<style>
+.headerCode {background-color:#555;overflow:hidden;clear:both;margin-top:0 auto;padding:10px;overflow:hidden;text-align:center;}
+</style>
+<header class='headerCode'>
+<div class='publi header_logo'><ins vtx-position='ldb' vtx-conf=''></ins></div>
+</header>		<h1>Web responsive  o Adaptable</h1>
+	<header>
+
+	<nav>
+		<ul>
+			<li>menu 1</li>
+			<li>menu 2</li>
+			<li>menu 3</li>
+			<li>menu 4</li>
+		</ul>
+		<ul>
+			<li>menu 5</li>
+			<li>menu 6</li>
+			<li>menu 7</li>
+			<li>menu 8</li>
+		</ul>
+	</nav>
+<div class="contenedorprincipal">	
+	<section>
+		<p>
+			<b>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</b>
+			<br>Este meta tag se utiliza para controlar cómo aparecerá el contenido HTML en los navegadores móviles. Así nos aseguramos que el contenido se ajusta al ancho del dispositivo. En este caso estamos indicando que el contenido tendrá el ancho del dispositivo y que la escala inicial es de 1
+		</p>
+		
+		<p>
+			La expresión <b>@media</b> de css3, es fundamental. Nos permite estableces condiciones desde CSS para conocer el dispositivo desde el se accede a nuestra web y aplicar nuevos estilos CSS. Por ejemplo: podemos eliminar el sidebar de nuestro blog si el navegador mide menos de 600px.
+			<br>Tenéis la info más detallada en: http://www.w3.org/TR/css3-mediaqueries/
+			<p>
+				Las propiedades que más nos interesan son las siguientes:
+				<ul>
+					a) <b>width y height</b> Ancho y alto del navegador (podemos añadir el prefijo min- o max-)
+					<br>b) <b>width y height</b> Ancho y alto del dispositivo, móviles y tablets (podemos añadir el prefijo min- o max- )
+					<br>c) <b>orientation</b> Orientación del móvil o tablet (para panorámico utilizaremos orientation:portrait, para vertical orientation:landscape)
+				</ul>
+			</p>
+			
+			<p>
+				<b>@media screen and (max-width:980px)</b> Se utiliza para definir un tamaño o inferior. En este caso, para 980px o menos.
+			</p>
+		</p>
+	</section>
+	<aside>Aside</aside>
+</div>
+	<footer>
+		<p><a href="https://campus.dayperperu.com">https://campus.dayperperu.com</a></p>
+		<style>
+.publi_belowForms {clear:both;margin-top:10px;overflow:hidden;text-align:center;}
+</style>
+<div class='publi_belowForms'><div class='wrapper'>
+<div class='publi header_logo'><ins vtx-position='ldb' vtx-conf=''></ins></div>
+</div></div>
+    </footer>
+</div>
+</body>
+</html>
